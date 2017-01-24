@@ -13,7 +13,6 @@ import java.util.Set;
  */
 public class BinaryWordSeg implements IWordSeg {
 
-	@Override
 	public List<String> tokens(String doc) {
 		List<String> binaryWords = new LinkedList<String>();
 		for(int i = 0; i < doc.length() - 1; i += 1) {
@@ -24,7 +23,6 @@ public class BinaryWordSeg implements IWordSeg {
 		return binaryWords;
 	}
 
-	@Override
 	public List<String> tokens(String doc, Set<String> stopWords) {
 		return null;
 	}

@@ -66,9 +66,9 @@ public class Fingerprint32 {
 		System.out.println("");
 		System.out.println("You set Hamming Distance Threshold <= " + k);
 		// Compare each fingerprint with
-		ArrayList<Integer> similars = new ArrayList<>();
-		Set<Integer> redundants = new TreeSet<>();
-		ArrayList<Integer> uniques = new ArrayList<>();
+		ArrayList<Integer> similars = new ArrayList<Integer>();
+		Set<Integer> redundants = new TreeSet<Integer>();
+		ArrayList<Integer> uniques = new ArrayList<Integer>();
 		for (int i = 0; i < docHashes.size(); i++) {
 			for (int j = 0; j < docHashes.size(); j++) {
 				if (i != j) {
